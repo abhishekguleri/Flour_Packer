@@ -1,21 +1,26 @@
 package Guleri;
-
-public class Main {
-
-    public static void main(int number) {
-                if(number<1){
-                    System.out.println("Invalid Value");
-                }
-                int i=1;
-                while(i<=number){
-                    if(number%i==0){
-
-                        System.out.println(i);}
-                    i++;
-                }
-
+    public class FlourPacker {
+     
+        public static boolean canPack(int bigCount, int smallCount, int goal) {
+     
+            if (bigCount<0 || smallCount<0 || goal<0) {
+                return false;
             }
+     
+            int total = bigCount*5+smallCount;
+     
+            if (total<goal) {
+                System.out.println("Not enough bags to make a package.");
+     
+            }
+     
+            else {
+                int usedBigCount = (goal/5);
+                if (usedBigCount*5+smallCount>=goal) {
+                    return true;
+                }
+            }
+            
+            return false;
         }
-	// write your code here
     }
-}
