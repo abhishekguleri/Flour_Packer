@@ -1,5 +1,5 @@
-# flour_packer
- method named canPack with three parameters of type int named bigCount, smallCount, and goal. 
+# Flour_Packer
+ Method named canPack with three parameters of type int named bigCount, smallCount, and goal. 
 Write a method named canPack with three parameters of type int named bigCount, smallCount, and goal. 
 
 The parameter bigCount represents the count of big flour bags (5 kilos each).
